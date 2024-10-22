@@ -1,0 +1,27 @@
+{
+  "name": "click",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "description": "鼠标点击的烟花特效",
+  "author":"shy",
+  "icons":{
+    "32":"icons/icon64.png",
+    "64":"icons/icon64.png",
+    "128":"icons/icon128.png"
+
+  },
+  "action":{
+    "default_popup":"index.html"
+  },
+  "content_scripts":[
+    {
+      "matches":[
+        "<all_urls>"
+
+      ],
+      "js":[
+        "./js/inject.js"
+      ]
+    }
+  ]
+}
